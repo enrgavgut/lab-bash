@@ -1,0 +1,17 @@
+echo 'Hello World'
+mkdir new_dir
+rmdir new_dir
+cp lorem/sed.txt lorem-copy/
+cp lorem/at.txt lorem-copy/;cp lorem/lorem.txt lorem-copy/
+less lorem/sed.txt
+less lorem/lorem.txt;less lorem/at.txt
+head -n 3 lorem-copy/sed.txt
+tail -n 3 lorem-copy/sed.txt
+echo "Homo homini lupus" >> lorem-copy/sed.txt
+tail -n 3 lorem-copy/sed.txt
+sed 's/et/ET/' lorem/at.txt; cat -b lorem/at.txt
+whoami
+pwd
+ls *.txt lorem
+cat -b lorem/sed.txt
+ls *lorem* | wc -l
